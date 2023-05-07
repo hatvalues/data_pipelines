@@ -1,0 +1,6 @@
+apache-beam[gcp]==2.46.0
+google-cloud-storage==2.9.0
+urllib3==1.26.15
+pyarrow==9.0.0
+PyScaffold==4.4.1
+python-decouple==3.8

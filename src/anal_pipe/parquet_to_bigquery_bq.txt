@@ -1,0 +1,13 @@
+
+# Note write empty is not supported
+
+# Construct the bq command with the interpolated variables
+bq_command="bq load \
+ --source_format=PARQUET \
+ --project_id=$PROJECT_ID \
+ --autodetect \
+ --replace \
+ $DATASET.small_synth_parq \
+ gs://$BUCKET_NAME/synth_parquet_files/small_synth_entities.parquet"
+
+ $bq_command
